@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("./bg.jpg");
+    background-size: cover;
+}
+#board {
+    width: 560px;
+    height: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("./board.jpg");
+    opacity: 0.9;
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+#board div {
+    width: 180px; 
+    height: 180px;
+    background-image: url("./coffin.png");
+    background-size: cover;
+}
+#board div img {
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
