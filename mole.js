@@ -30,15 +30,15 @@ function setMole() {
     if (currSebastianTile) {
         currSebastianTile.innerHTML = "";
     }
-    let mole = document.createElement("img");
-    mole.src = "./Sebastian.png";
+    let seba = document.createElement("img");
+    seba.src = "./Sebastian.png";
 
     let num = getRandomTile();
     if (currundertakerTile && currundertakerTile.id == num) {
         return;
     }
     currSebastianTile = document.getElementById(num);
-    currSebastianTile.appendChild(mole);
+    currSebastianTile.appendChild(seba);
 }
 
 function setPlant() {
@@ -48,15 +48,15 @@ function setPlant() {
     if (currundertakerTile) {
         currundertakerTile.innerHTML = "";
     }
-    let plant = document.createElement("img");
-    plant.src = "./undertaker.png";
+    let un = document.createElement("img");
+    un.src = "./undertaker.png";
 
     let num = getRandomTile();
     if (currSebastianTile && currSebastianTile.id == num) {
         return;
     }
     currundertakerTile = document.getElementById(num);
-    currundertakerTile.appendChild(plant);
+    currundertakerTile.appendChild(un);
 }
 
 function selectTile() {
